@@ -1,0 +1,11 @@
+function validateForm(){
+	var email = document.getElementById("email");
+	var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;	
+	var password = document.getElementById("password");
+	if(email.value == "" || password.value == "") {
+            alert("No blank values allowed.")
+        }
+	else if (!(email.value.match(emailformat))){
+		alert("Please enter a valid email address.")
+    }  
+}
