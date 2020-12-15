@@ -1,6 +1,7 @@
 //hard code error messages
 var errors = "This field has no value";
 var valueError = "Please enter a valid value";
+var charError = "Missing one special character";
 
 //get input values
 function getValue(iValue){
@@ -46,7 +47,7 @@ function passReg(PRValue,PRError){
         //clear error message when email follow reg expression
     }
     else {
-        setValue(PRError,valueError);
+        setValue(PRError,charError);
         //set value error when email does not follow reg expression
     }
 }
