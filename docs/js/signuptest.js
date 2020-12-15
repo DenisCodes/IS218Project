@@ -1,7 +1,7 @@
 //hard code error messages
 var errors = "This field has no value";
 var valueError = "Please enter a valid value";
-var charError = "Missing one special character";
+var charError = "Invalid value/Missing one special character";
 
 //get input values
 function getValue(iValue){
